@@ -1,6 +1,6 @@
 {
   "name": "@shgysk8zer0/http-server-echo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Just a simple endpoint/handler to echo request details for @shgysk8zer0/http-server",
   "keywords": [],
   "type": "module",
