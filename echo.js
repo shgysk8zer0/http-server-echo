@@ -1,4 +1,4 @@
-export default async function(req, { ip, cookies, matches }) {
+export default async function(req, context) {
 	return Response.json({
 		url: req.url,
 		method: req.method,
@@ -11,10 +11,6 @@ export default async function(req, { ip, cookies, matches }) {
 		priority: req.priority,
 		body: req.body instanceof ReadableStream ? await req.text() : null,
 		signal: { aborted: req.signal.aborted, reason: req.signal.reason ?? null },
-		context: {
-			cookies,
-			matches,
-			ip,
-		},
+		context,
 	});
 }

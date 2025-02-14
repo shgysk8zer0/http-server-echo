@@ -1,6 +1,6 @@
 {
   "name": "@shgysk8zer0/http-server-echo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Just a simple endpoint/handler to echo request details for @shgysk8zer0/http-server",
   "keywords": [],
   "type": "module",
@@ -53,7 +53,7 @@
   "homepage": "https://github.com/shgysk8zer0/http-server-echo#readme",
   "devDependencies": {
     "@shgysk8zer0/eslint-config": "^1.0.3",
-    "@shgysk8zer0/http-server": "^1.0.3",
+    "@shgysk8zer0/http-server": "^1.0.5",
     "eslint": "^9.20.0"
   }
 }
