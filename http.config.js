@@ -6,6 +6,6 @@ export default {
 	signal: controller.signal,
 	logger: controller.abort,
 	routes: {
-		'/:path(*)': './echo.js',
+		'/:path(*)': import.meta.resolve('./echo.js'),
 	}
 };
