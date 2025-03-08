@@ -6,7 +6,7 @@ const controller = new AbortController();
 const signal = AbortSignal.any([controller.signal, AbortSignal.timeout(1000)]);
 const hostname = 'localhost';
 const logger = fail;
-const routes = { '/:path(*)': './echo.js' };
+const routes = { '/:path(*)': import.meta.resolve('./echo.js') };
 let port = 8001;
 
 describe('Test http echo demo handler.', { signal }, async () => {

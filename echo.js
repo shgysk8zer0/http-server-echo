@@ -5,7 +5,7 @@
  * @param {URLSearchParams} context.searchParams
  * @returns {Promise<Response>}
  */
-export default async function(request, { searchParams, ...context }) {
+export default async function(request, { url, matches, searchParams, cookies, ip, params }) {
 	return Response.json({
 		url: request.url,
 		method: request.method,
@@ -23,7 +23,7 @@ export default async function(request, { searchParams, ...context }) {
 				searchParams.keys(),
 				key => [key, searchParams.getAll(key)]
 			)),
-			...context
+			cookies, ip, params, url, matches,
 		},
 	});
 }
