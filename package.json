@@ -54,6 +54,6 @@
   "devDependencies": {
     "@shgysk8zer0/eslint-config": "^1.0.3",
     "@shgysk8zer0/http-server": "^1.0.5",
-    "eslint": "^9.20.0"
+    "eslint": "^10.0.0"
   }
 }
